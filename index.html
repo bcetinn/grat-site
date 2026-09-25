@@ -39,119 +39,241 @@
 </head>
 <body>
 <main>
-
+<!--
+  VERI AKISI SOZLESMESI: Bu sayfa uygulamanin GERCEK veri akisini anlatir.
+  Kod yeni bir sunucuya istek atmaya baslarsa, konum/kimlik gibi yeni bir veri
+  gonderirse ya da yeni bir izin kullanirsa bu sayfa AYNI commit'te guncellenir
+  (ayrica docs/hukuk/kullanim-sartlari-taslak.md ve App Store gizlilik etiketi:
+  docs/appstore/hazirlik.md). tools/veri_akisi_kontrol.sh bunu CI'da denetler.
+-->
+  <p class="lang">English</p>
   <h1>GRAT — Privacy Policy</h1>
-  <p class="updated">Last updated: 17 September 2026</p>
+  <p class="updated">Last updated: 25 September 2026</p>
 
-  <p class="lead">GRAT is a mountain weather and storm-warning app for climbers and hikers.</p>
+  <p class="lead">GRAT is a mountain weather and storm-warning app for climbers and hikers.
+  GRAT has no user accounts, no servers of its own, and no analytics, tracking or advertising.
+  We cannot see your data, and we do not collect, store, sell or share it.</p>
 
-  <p><strong>GRAT has no user accounts, no servers of its own, and no analytics or advertising.</strong>
-  Nothing you do in the app is sent to us, because there is nothing to send it to. We cannot see
-  your data, and we do not collect, store, sell or share it.</p>
+  <h2>Controller</h2>
+  <p>Bahadır Çetin, <a href="mailto:bcetindev@icloud.com">bcetindev@icloud.com</a></p>
 
   <h2>Location</h2>
-  <p>If you grant location access, your coordinates are used to request weather data for where you
-  are. Coordinates are <strong>rounded to three decimal places (about 110 metres)</strong> before
-  they are sent to any weather service. Full precision is used only when querying official weather
-  warnings, which require it to match the correct warning area. Your location is never stored by us
-  and never linked to an identity.</p>
+  <p>If you grant location access, your position is used on your device to assess weather risk and
+  to request weather data for where you are. Before any request leaves your device, coordinates are
+  <strong>rounded to three decimal places (about 110 metres)</strong>. This applies to every
+  service listed below, including official warnings. To show your country and district, the rounded
+  position is also sent to Apple's geocoding service (part of iOS). Your location is never sent to
+  us, never stored on a server of ours and never linked to an identity.</p>
 
   <h2>Motion and barometer</h2>
   <p>If you grant motion access, the device barometer is read to detect pressure drops that can
-  signal an approaching storm. These readings stay on your device.</p>
+  signal an approaching storm, and iOS motion activity (for example "in a vehicle") is used during
+  Companion Mode to pause distance and barometer measurements while you travel by car. These readings
+  stay on your device.</p>
 
   <h2>Data stored on your device</h2>
-  <p>Climb session logs, feedback entries, settings and cached weather data are stored only on your
-  iPhone. They are removed when you delete the app. You can export your own feedback entries as a
-  CSV file at any time from Settings; that file is yours and is shared only if you choose to share
-  it.</p>
+  <p>Companion Mode session logs (time, rounded position, altitude, weather values, risk level,
+  notifications and your answers to "was this alert appropriate?"), feedback entries, routes you
+  import, settings, the date you accepted the terms of use and cached weather data are stored only on
+  your iPhone. If iCloud Backup is enabled, iOS includes them in your own device backup. They are
+  removed when you delete the app. You can export your logs as a CSV file from Settings; that file is
+  shared only if you choose to share it.</p>
 
-  <h2>Third-party weather services</h2>
-  <p>To show forecasts, warnings, observations and radar, the app makes direct requests from your
+  <h2>Weather services</h2>
+  <p>To show forecasts, warnings, observations and radar, the app makes requests directly from your
   device to public weather services:</p>
   <ul>
-    <li><strong>Deutscher Wetterdienst (DWD)</strong> and its Bright Sky interface — forecasts,
-        official warnings, station observations and radar</li>
-    <li><strong>MeteoAlarm</strong> (EUMETNET) — official warnings across Europe</li>
+    <li><strong>Open-Meteo</strong> (open-meteo.com) — weather forecasts (ICON, ECMWF models)</li>
+    <li><strong>Deutscher Wetterdienst (DWD)</strong> and its <strong>Bright Sky</strong>
+        interface — official warnings, station observations and radar (Germany)</li>
+    <li><strong>MeteoAlarm (EUMETNET)</strong> — official warnings across Europe (requested by
+        country, without coordinates)</li>
     <li><strong>NOAA Aviation Weather Center</strong> (aviationweather.gov) — airport (METAR)
         observations outside Germany</li>
-    <li><strong>RainViewer</strong> — radar imagery outside the DWD coverage area</li>
+    <li><strong>RainViewer</strong> — radar imagery outside the DWD coverage area (map tiles of
+        the area you view)</li>
   </ul>
-  <p>These services receive the request — including the rounded coordinates and your IP address, as
-  with any internet request — and handle it under their own privacy terms. GRAT sends them no
-  identifier, no account and no personal information.</p>
+  <p>These services receive the request — including the rounded coordinates and, as with any
+  internet request, your IP address — and handle it under their own privacy terms. GRAT sends them no
+  identifier, no account and no personal information. A link to the Turkish State Meteorological
+  Service (MGM) only opens their website when you tap it.</p>
+
+  <h2>Purchases</h2>
+  <p>If GRAT Pro is offered and you buy it, payment is handled entirely by Apple through your Apple
+  ID. We receive no payment details and no personal information; your purchase is verified on your
+  device using Apple's signed transaction data.</p>
 
   <h2>Notifications</h2>
   <p>Notifications are generated locally on your device. GRAT uses no push servers.</p>
+
+  <h2>Your rights</h2>
+  <p>Because we hold no personal data about you, there is nothing for us to access, correct or delete
+  on our side; the data on your device is under your control and is deleted with the app. You have
+  the right to lodge a complaint with a data protection supervisory authority, in particular in the
+  EU member state of your residence. Questions: <a href="mailto:bcetindev@icloud.com">bcetindev@icloud.com</a>.</p>
 
   <h2>Children</h2>
   <p>GRAT is not directed at children and collects no personal data from anyone.</p>
 
   <h2>Changes</h2>
-  <p>If this policy changes, the date above will be updated.</p>
+  <p>If the app starts sending any other data, or to any other service, this policy is updated before
+  that version is released, and the date above changes.</p>
 
-  <h2>Contact</h2>
-  <p><a href="mailto:bcetindev@icloud.com">bcetindev@icloud.com</a></p>
+  <hr>
+
+  <p class="lang">Deutsch</p>
+  <h1>GRAT — Datenschutzerklärung</h1>
+  <p class="updated">Stand: 25. September 2026</p>
+
+  <p class="lead">GRAT ist eine App für Bergwetter und Gewitterwarnungen für Bergsteiger und
+  Wanderer. GRAT hat keine Benutzerkonten, keine eigenen Server und keine Analyse-, Tracking- oder
+  Werbedienste. Wir sehen deine Daten nicht; wir erheben, speichern, verkaufen und teilen sie
+  nicht.</p>
+
+  <h2>Verantwortlicher</h2>
+  <p>Bahadır Çetin, <a href="mailto:bcetindev@icloud.com">bcetindev@icloud.com</a></p>
+
+  <h2>Standort</h2>
+  <p>Wenn du den Standortzugriff erlaubst, wird deine Position auf dem Gerät zur Einschätzung des
+  Wetterrisikos und zum Abruf von Wetterdaten für deinen Ort verwendet. Bevor eine Anfrage dein Gerät
+  verlässt, werden die Koordinaten <strong>auf drei Nachkommastellen (etwa 110 Meter)
+  gerundet</strong> — bei allen unten genannten Diensten, auch bei amtlichen Warnungen. Um Land und
+  Kreis anzuzeigen, wird die gerundete Position außerdem an den Geocoding-Dienst von Apple (Teil von
+  iOS) gesendet. Dein Standort wird nie an uns gesendet, nie auf einem Server von uns gespeichert und
+  nie mit einer Identität verknüpft.</p>
+
+  <h2>Bewegung und Barometer</h2>
+  <p>Wenn du den Bewegungszugriff erlaubst, wird das Barometer des Geräts gelesen, um Druckabfälle zu
+  erkennen, die ein nahendes Gewitter ankündigen können; außerdem nutzt der Begleitmodus die
+  iOS-Bewegungsaktivität (z. B. „im Fahrzeug"), um Distanz- und Barometermessung während einer
+  Autofahrt zu pausieren. Diese Werte verlassen dein Gerät nicht.</p>
+
+  <h2>Auf deinem Gerät gespeicherte Daten</h2>
+  <p>Protokolle des Begleitmodus (Zeit, gerundete Position, Höhe, Wetterwerte, Risikostufe,
+  Mitteilungen und deine Antworten auf „War diese Warnung zutreffend?"), Feedback, importierte Routen,
+  Einstellungen, das Datum deiner Zustimmung zu den Nutzungsbedingungen und zwischengespeicherte
+  Wetterdaten liegen nur auf deinem iPhone. Ist iCloud-Backup aktiv, nimmt iOS sie in dein eigenes
+  Geräte-Backup auf. Sie werden beim Löschen der App entfernt. Du kannst deine Protokolle in den
+  Einstellungen als CSV-Datei exportieren; diese Datei wird nur geteilt, wenn du sie teilst.</p>
+
+  <h2>Wetterdienste</h2>
+  <p>Für Vorhersagen, Warnungen, Beobachtungen und Radar stellt die App Anfragen direkt von deinem
+  Gerät an öffentliche Wetterdienste:</p>
+  <ul>
+    <li><strong>Open-Meteo</strong> (open-meteo.com) — Wettervorhersagen (Modelle ICON, ECMWF)</li>
+    <li><strong>Deutscher Wetterdienst (DWD)</strong> und dessen Schnittstelle
+        <strong>Bright Sky</strong> — amtliche Warnungen, Stationsbeobachtungen und Radar
+        (Deutschland)</li>
+    <li><strong>MeteoAlarm (EUMETNET)</strong> — amtliche Warnungen in Europa (nach Land abgefragt,
+        ohne Koordinaten)</li>
+    <li><strong>NOAA Aviation Weather Center</strong> (aviationweather.gov) — Flughafen-
+        beobachtungen (METAR) außerhalb Deutschlands</li>
+    <li><strong>RainViewer</strong> — Radarbilder außerhalb des DWD-Gebiets (Kartenkacheln des
+        angezeigten Bereichs)</li>
+  </ul>
+  <p>Diese Dienste erhalten die Anfrage — einschließlich der gerundeten Koordinaten und, wie bei jeder
+  Internetanfrage, deiner IP-Adresse — und verarbeiten sie nach ihren eigenen Datenschutzbestimmungen.
+  GRAT sendet ihnen keine Kennung, kein Konto und keine personenbezogenen Daten. Ein Link zum
+  türkischen Wetterdienst (MGM) öffnet nur dessen Website, wenn du ihn antippst.</p>
+
+  <h2>Käufe</h2>
+  <p>Wenn GRAT Pro angeboten wird und du es kaufst, wird die Zahlung vollständig von Apple über deine
+  Apple-ID abgewickelt. Wir erhalten keine Zahlungsdaten und keine personenbezogenen Daten; dein Kauf
+  wird auf deinem Gerät anhand der signierten Transaktionsdaten von Apple geprüft.</p>
+
+  <h2>Mitteilungen</h2>
+  <p>Mitteilungen werden lokal auf deinem Gerät erzeugt. GRAT nutzt keine Push-Server.</p>
+
+  <h2>Deine Rechte</h2>
+  <p>Da wir keine personenbezogenen Daten über dich speichern, gibt es bei uns nichts, worauf wir
+  Auskunft geben, was wir berichtigen oder löschen könnten; die Daten auf deinem Gerät stehen unter
+  deiner Kontrolle und werden mit der App gelöscht. Du hast das Recht, dich bei einer
+  Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem EU-Mitgliedstaat deines Wohnsitzes.
+  Fragen: <a href="mailto:bcetindev@icloud.com">bcetindev@icloud.com</a>.</p>
+
+  <h2>Kinder</h2>
+  <p>GRAT richtet sich nicht an Kinder und erhebt von niemandem personenbezogene Daten.</p>
+
+  <h2>Änderungen</h2>
+  <p>Sendet die App künftig andere Daten oder an andere Dienste, wird diese Erklärung vor der
+  Veröffentlichung dieser Version aktualisiert und das Datum oben geändert.</p>
 
   <hr>
 
   <p class="lang">Türkçe</p>
   <h1>GRAT — Gizlilik Politikası</h1>
-  <p class="updated">Son güncelleme: 17 Eylül 2026</p>
+  <p class="updated">Son güncelleme: 25 Eylül 2026</p>
 
   <p class="lead">GRAT, dağcılar ve yürüyüşçüler için bir dağ havası ve fırtına uyarı
-  uygulamasıdır.</p>
+  uygulamasıdır. GRAT'ta kullanıcı hesabı, kendi sunucumuz, analitik, takip ve reklam yoktur.
+  Verilerini göremiyoruz; toplamıyor, saklamıyor, satmıyor ve paylaşmıyoruz.</p>
 
-  <p><strong>GRAT'ta kullanıcı hesabı yok, kendi sunucumuz yok, analitik ve reklam yok.</strong>
-  Uygulamada yaptığınız hiçbir şey bize gönderilmiyor, çünkü gönderilecek bir yer yok. Verilerinizi
-  göremiyoruz; toplamıyor, saklamıyor, satmıyor ve paylaşmıyoruz.</p>
+  <h2>Sorumlu</h2>
+  <p>Bahadır Çetin, <a href="mailto:bcetindev@icloud.com">bcetindev@icloud.com</a></p>
 
   <h2>Konum</h2>
-  <p>Konum izni verirseniz, bulunduğunuz yerin hava verisini almak için koordinatlarınız kullanılır.
-  Koordinatlar herhangi bir hava servisine gönderilmeden önce <strong>üç ondalık basamağa (yaklaşık
-  110 metre) yuvarlanır.</strong> Tam hassasiyet yalnızca resmî hava uyarılarını sorgularken
-  kullanılır; doğru uyarı bölgesiyle eşleşmesi için bu gerekli. Konumunuz bizim tarafımızdan
-  saklanmaz ve hiçbir kimlikle ilişkilendirilmez.</p>
+  <p>Konum izni verirsen konumun cihazında hava riskini değerlendirmek ve bulunduğun yerin hava
+  verisini almak için kullanılır. Herhangi bir istek cihazından çıkmadan önce koordinatlar
+  <strong>üç ondalık basamağa (yaklaşık 110 metre) yuvarlanır</strong> — resmî uyarılar dahil aşağıdaki
+  bütün servisler için. Ülkeni ve ilçeni göstermek için yuvarlanmış konum ayrıca Apple'ın adres
+  çözümleme servisine (iOS'un parçası) gönderilir. Konumun bize hiç gönderilmez, bizim bir
+  sunucumuzda saklanmaz ve hiçbir kimlikle ilişkilendirilmez.</p>
 
   <h2>Hareket ve barometre</h2>
-  <p>Hareket izni verirseniz, yaklaşan fırtınayı haber verebilen basınç düşüşlerini algılamak için
-  cihazın barometresi okunur. Bu ölçümler cihazınızdan çıkmaz.</p>
+  <p>Hareket izni verirsen, yaklaşan fırtınayı haber verebilen basınç düşüşlerini algılamak için
+  cihazın barometresi okunur; ayrıca Eşlik Modu, araçla giderken mesafe ve barometre ölçümünü
+  duraklatmak için iOS hareket etkinliğini (ör. "araçta") kullanır. Bu ölçümler cihazından
+  çıkmaz.</p>
 
-  <h2>Cihazınızda saklananlar</h2>
-  <p>Tırmanış oturumu kayıtları, geri bildirim girdileri, ayarlar ve önbelleğe alınmış hava verisi
-  yalnızca iPhone'unuzda durur. Uygulamayı sildiğinizde bunlar da silinir. Kendi geri bildirim
-  kayıtlarınızı istediğiniz zaman Ayarlar'dan CSV olarak dışa aktarabilirsiniz; o dosya sizindir,
-  yalnızca siz paylaşırsanız paylaşılır.</p>
+  <h2>Cihazında saklananlar</h2>
+  <p>Eşlik Modu oturum kayıtları (zaman, yuvarlanmış konum, rakım, hava değerleri, risk seviyesi,
+  bildirimler ve "bu uyarı yerinde miydi?" cevapların), geri bildirimler, içe aktardığın rotalar,
+  ayarlar, kullanım şartlarını kabul ettiğin tarih ve önbelleğe alınmış hava verisi yalnız
+  iPhone'unda durur. iCloud Yedekleme açıksa iOS bunları senin kendi cihaz yedeğine alır.
+  Uygulamayı sildiğinde silinirler. Kayıtlarını Ayarlar'dan CSV olarak dışa aktarabilirsin; o dosya
+  yalnız sen paylaşırsan paylaşılır.</p>
 
-  <h2>Üçüncü taraf hava servisleri</h2>
-  <p>Tahmin, uyarı, gözlem ve radar göstermek için uygulama, cihazınızdan doğrudan kamuya açık hava
+  <h2>Hava servisleri</h2>
+  <p>Tahmin, uyarı, gözlem ve radar göstermek için uygulama cihazından doğrudan kamuya açık hava
   servislerine istek atar:</p>
   <ul>
-    <li><strong>Deutscher Wetterdienst (DWD)</strong> ve Bright Sky arayüzü — tahmin, resmî uyarı,
-        istasyon gözlemi ve radar</li>
-    <li><strong>MeteoAlarm</strong> (EUMETNET) — Avrupa genelinde resmî uyarılar</li>
+    <li><strong>Open-Meteo</strong> (open-meteo.com) — hava tahminleri (ICON, ECMWF modelleri)</li>
+    <li><strong>Deutscher Wetterdienst (DWD)</strong> ve <strong>Bright Sky</strong> arayüzü —
+        resmî uyarılar, istasyon gözlemleri ve radar (Almanya)</li>
+    <li><strong>MeteoAlarm (EUMETNET)</strong> — Avrupa genelinde resmî uyarılar (ülkeye göre,
+        koordinatsız)</li>
     <li><strong>NOAA Aviation Weather Center</strong> (aviationweather.gov) — Almanya dışında
         havaalanı (METAR) gözlemleri</li>
-    <li><strong>RainViewer</strong> — DWD kapsama alanı dışında radar görüntüsü</li>
+    <li><strong>RainViewer</strong> — DWD kapsamı dışında radar görüntüsü (baktığın alanın harita
+        karoları)</li>
   </ul>
-  <p>Bu servisler isteği alır — her internet isteğinde olduğu gibi yuvarlanmış koordinat ve IP
-  adresiniz dahil — ve kendi gizlilik koşullarına göre işler. GRAT bu servislere hiçbir kimlik,
-  hesap veya kişisel bilgi göndermez.</p>
+  <p>Bu servisler isteği alır — yuvarlanmış koordinat ve her internet isteğinde olduğu gibi IP
+  adresin dahil — ve kendi gizlilik koşullarına göre işler. GRAT bu servislere hiçbir kimlik, hesap
+  veya kişisel bilgi göndermez. Meteoroloji Genel Müdürlüğü (MGM) bağlantısı yalnız dokunduğunda
+  onların web sitesini açar.</p>
+
+  <h2>Satın almalar</h2>
+  <p>GRAT Pro sunulur ve satın alırsan ödemeyi tamamen Apple, Apple ID'n üzerinden yürütür. Biz
+  hiçbir ödeme bilgisi ve kişisel bilgi almayız; satın alman cihazında Apple'ın imzalı işlem
+  verisiyle doğrulanır.</p>
 
   <h2>Bildirimler</h2>
-  <p>Bildirimler cihazınızda yerel olarak üretilir. GRAT hiçbir push sunucusu kullanmaz.</p>
+  <p>Bildirimler cihazında yerel olarak üretilir. GRAT hiçbir push sunucusu kullanmaz.</p>
+
+  <h2>Hakların</h2>
+  <p>Hakkında hiçbir kişisel veri tutmadığımız için bizim tarafımızda erişilecek, düzeltilecek ya da
+  silinecek bir şey yoktur; cihazındaki veriler senin kontrolündedir ve uygulamayla birlikte silinir.
+  Bir veri koruma denetim makamına, özellikle ikamet ettiğin AB ülkesindekine şikâyette bulunma
+  hakkın vardır. Sorular: <a href="mailto:bcetindev@icloud.com">bcetindev@icloud.com</a>.</p>
 
   <h2>Çocuklar</h2>
   <p>GRAT çocuklara yönelik değildir ve hiç kimseden kişisel veri toplamaz.</p>
 
   <h2>Değişiklikler</h2>
-  <p>Bu politika değişirse yukarıdaki tarih güncellenir.</p>
-
-  <h2>İletişim</h2>
-  <p><a href="mailto:bcetindev@icloud.com">bcetindev@icloud.com</a></p>
+  <p>Uygulama ileride başka bir veri ya da başka bir servise veri göndermeye başlarsa, bu politika o
+  sürüm yayınlanmadan önce güncellenir ve yukarıdaki tarih değişir.</p>
 
   <footer>GRAT · Bahadır Çetin</footer>
-
 </main>
 </body>
 </html>
